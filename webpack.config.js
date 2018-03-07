@@ -14,13 +14,6 @@ module.exports = {
     new webpack.DllReferencePlugin({
       context: __dirname,
       manifest: require('./manifest.json'),
-    }),
-    new WebpackShellPlugin({
-      onBuildStart:[
-        'echo "Webpack Start"',
-        'git clone git@github.com:BeisenUX/shared-common-cmps.git'
-      ],
-      onBuildEnd:['echo "Webpack End"']
     })
   ],
 };
