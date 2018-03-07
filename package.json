@@ -1,0 +1,22 @@
+{
+  "name": "webpack-dll",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:entry": "webpack --config webpack.config.js --watch",
+    "build:dll": "webpack --config webpack.config.dll.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
